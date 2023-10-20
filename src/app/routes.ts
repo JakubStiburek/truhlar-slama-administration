@@ -10,6 +10,10 @@ const ROUTES_CONFIG: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: '**',
+    component: LoginComponent,
   }
 ]
 

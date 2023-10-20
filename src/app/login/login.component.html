@@ -1,0 +1,21 @@
+<div class="flex main">
+  <div class="card flex">
+    <h1>Přihlášení</h1>
+    <form class="flex spacing">
+      <div class="flex-row">
+        <label for="username">Email</label>
+        <input [formControl]="username" id="username" name="username" placeholder="josef@truhlarslama.cz"
+               type="text"
+               value="username">
+      </div>
+      <div class="flex-row">
+        <label for="password">Heslo</label>
+        <input [formControl]="password" id="password" name="password" placeholder="********" type="password"
+               value="password">
+      </div>
+      <div class="flex-row">
+        <button (click)="login($event)" class="btn btn-primary" type="submit">Přihlásit</button>
+      </div>
+    </form>
+  </div>
+</div>

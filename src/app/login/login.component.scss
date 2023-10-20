@@ -1,0 +1,29 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.spacing {
+  gap: 1rem;
+}
+
+.main {
+  height: 100vh;
+}
+
+.card {
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}

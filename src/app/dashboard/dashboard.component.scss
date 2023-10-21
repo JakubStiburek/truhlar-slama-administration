@@ -1,0 +1,41 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+.top-nav {
+  background: var(--primary-color);
+  grid-column: span 2;
+  padding: 2rem;
+}
+
+.left-menu {
+  background: var(--secondary-color);
+  grid-row: span 2;
+  padding: 8rem;
+}
+
+.main-content {
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.light-text {
+  color: var(--light-text);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+}
+

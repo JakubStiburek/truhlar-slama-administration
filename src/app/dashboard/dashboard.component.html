@@ -7,9 +7,9 @@
     <!-- Top navigation content -->
   </div>
   <div class="left-menu flex-column">
-    <div class="left-menu-item">Produkty</div>
+    <div (click)="goTo($event, 'dashboard')" class="left-menu-item">Produkty</div>
   </div>
   <div class="main-content">
-    <!-- Main content -->
+    <app-product-list></app-product-list>
   </div>
 </div>

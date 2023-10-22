@@ -29,4 +29,9 @@ export class DashboardComponent {
       )
       .subscribe();
   }
+
+  goTo(event: Event, path: string) {
+    event.preventDefault();
+    this.router.navigate([path]);
+  }
 }

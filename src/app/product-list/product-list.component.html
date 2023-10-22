@@ -1,0 +1,16 @@
+<div>
+  <ul class="list">
+    <li class="list-item header">
+      <p>Název</p>
+      <p>Cena</p>
+      <p>Na skladě</p>
+      <p>Kód</p>
+    </li>
+    <li (click)="goToItem($event, product.code)" *ngFor="let product of products" class="list-item">
+      <p>{{product.title}}</p>
+      <p>{{product.price}}</p>
+      <p>{{product.amount}}</p>
+      <p>{{product.code}}</p>
+    </li>
+  </ul>
+</div>
